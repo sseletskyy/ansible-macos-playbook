@@ -7,7 +7,7 @@
     recursive: yes
     update: yes
     accept_hostkey: yes
-    version: master
+    version: main
   tags:
     - custombrew
     - dotfiles
@@ -18,7 +18,3 @@
     - custombrew
     - dotfiles
     - stow
-- name: Unstow dotfiles
-  shell: cd $HOME/dotfiles/stow && ./macos-uninstall
-  tags:
-    - unstow

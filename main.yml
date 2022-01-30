@@ -23,3 +23,9 @@
       tags: [settings]
     - role: custombrew
       tags: [custombrew]
+  tasks:
+    - name: Unstow dotfiles
+      shell: cd ~/.dotfiles && ./macos-uninstall
+      become: false
+      tags:
+        - unstow

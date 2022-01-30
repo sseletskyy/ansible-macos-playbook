@@ -7,4 +7,4 @@
   tags: [custombrew, omz, zsh]
 
 - import_tasks: dotfiles.yml
-  tags: [custombrew, dotfiles, stow, unstow]
+  tags: [custombrew, dotfiles]
