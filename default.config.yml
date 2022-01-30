@@ -1,7 +1,10 @@
 ---
 
-computername: Kerngehäuse
-hostname: kerngehaeuse
+ssh_source_key: ~/ansible-macos-playbook/roles/ssh/.ssh/id_rsa
+ssh_dest_key: ~/.ssh/id_rsa
+
+computername: sse
+hostname: sse
 
 finder_proxy_icon_hover_delay: 0
 
@@ -29,75 +32,44 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/cask-drivers
   - homebrew/cask-fonts
-  - jeromegamez/formulae
-  - github/gh
-  - aws/tap
 
 homebrew_apps:
-  - 1password
-  - alfred
-  - aws-vault
-  - bartender
   - brave-browser
-  - cardhop
-  - cleanmymac
-  - dash
+  - cheatsheet
+  - clipy
   - discord
   - docker
-  - fantastical
   - firefox
-  - fliqlo
-  - font-fira-code
-  - gpg-suite
   - iterm2
   - jetbrains-toolbox
-  - mailmate
-  - multimc
-  - paw
-  - sequel-pro
-  - sonos
-  - spillo
+  - skype
   - slack
-  - spotify
-  - sublime-merge
-  - sublime-text
-  - tableplus
+  - spectacle
   - telegram
-  - transmit
-  - twitch
-  - whatsapp
+  - vlc
 
 homebrew_packages:
-  - aws-shell
-  - awscli
-  - aws-sam-cli
-  - bash
-  - chag
-  - composer
   - curl
   - fasd
-  - gh
+  - fzf
   - git
   - httpie
-  - imagemagick
-  - jq
   - make
+  - mas
+  - neovim
   - node
   - openssh
-  - php
-  - pkg-config
   - python
+  - reattach-to-user-namespace
+  - stow
+  - tldr
+  - tmux
   - tree
-  - vim
   - wget
-  - yadm
   - watch
   - zlib
-  - zsh
 
 mas_apps:
-  - { name: 1Blocker, id: 1107421413 }
-  - { name: Bear, id: 1091189122 }
-  - { name: Pages, id: 409201541 }
-  - { name: Patterns, id: 429449079 }
-  - { name: Tweetbot, id: 1384080005 }
+  - { name: EzyCal, id: 1190243926 }
+  - { name: Boop, id: 1518425043 }
+  - { name: Commander One - file manager, id: 1035236694 }

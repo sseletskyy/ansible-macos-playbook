@@ -1,0 +1,10 @@
+---
+
+- import_tasks: tmux-plugins.yml
+  tags: [custombrew]
+
+- import_tasks: omz.yml
+  tags: [custombrew, omz, zsh]
+
+- import_tasks: dotfiles.yml
+  tags: [custombrew, dotfiles, stow, unstow]

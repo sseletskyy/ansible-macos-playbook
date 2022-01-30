@@ -1,7 +1,7 @@
 ---
 
-- import_tasks: hostname.yml
-  tags: [settings-hostname]
+#- import_tasks: hostname.yml
+#  tags: [settings-hostname]
 
 - import_tasks: safari.yml
   tags: [settings-safari]

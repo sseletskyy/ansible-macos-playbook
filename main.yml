@@ -13,9 +13,13 @@
       tags: ['always']
 
   roles:
+    - role: ssh
+      tags: [ssh]
     - role: homebrew
       tags: [homebrew]
     - role: mas
       tags: [mas]
     - role: settings
       tags: [settings]
+    - role: custombrew
+      tags: [custombrew]

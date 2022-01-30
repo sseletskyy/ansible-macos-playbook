@@ -1,0 +1,24 @@
+---
+
+- name: Cloning .dotfiles
+  ansible.builtin.git:
+    repo: 'git@github.com:sseletskyy/.dotfiles.git'
+    dest: "~/.dotfiles"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: master
+  tags:
+    - custombrew
+    - dotfiles
+    - stow
+- name: Stow dotfiles
+  shell: cd ~/.dotfiles && ./macos
+  tags:
+    - custombrew
+    - dotfiles
+    - stow
+- name: Unstow dotfiles
+  shell: cd $HOME/dotfiles/stow && ./macos-uninstall
+  tags:
+    - unstow

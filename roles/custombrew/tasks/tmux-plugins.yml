@@ -1,0 +1,16 @@
+---
+
+# Install Tmux Plugin Manager
+- name: Create Tmux Plugins folder
+  shell: mkdir -pv ~/.tmux/plugins
+  tags:
+    - custombrew
+    - tmux
+- name: Clone the tpm repository
+  git:
+    repo: "https://github.com/tmux-plugins/tpm"
+    dest: "~/.tmux/plugins/tpm"
+    version: "HEAD"
+  tags:
+    - custombrew
+    - tmux

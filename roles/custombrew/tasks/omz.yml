@@ -1,0 +1,28 @@
+- name: Create ~/.zsh folder
+  shell: mkdir -pv ~/.zsh
+  tags:
+    - custombrew
+    - install
+    - zsh
+- name: Install zsh-autosuggestions
+  git:
+    repo: "https://github.com/zsh-users/zsh-autosuggestions"
+    dest: "~/.zsh/zsh-autosuggestions"
+    version: "HEAD"
+  tags:
+    - custombrew
+    - install
+    - zsh
+- name: Install oh-my-zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  tags:
+    - custombrew
+    - install
+    - omz
+- name: Move oh-my-zsh's .zshrc to .zsh-default-oh-my-zshrc
+  shell: mv -f ~/.zshrc ~/.zsh-default-oh-my-zshrc
+  tags:
+    - custombrew
+    - install
+    - omz
+
