@@ -6,5 +6,8 @@
 - import_tasks: omz.yml
   tags: [custombrew, omz, zsh]
 
+- import_tasks: node.yml
+  tags: [custombrew, node]
+
 - import_tasks: dotfiles.yml
   tags: [custombrew, dotfiles]

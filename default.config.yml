@@ -65,7 +65,7 @@ homebrew_packages:
   - make
   - mas
   - neovim
-  - node
+  - n
   - openssh
   - python
   - reattach-to-user-namespace
@@ -81,3 +81,5 @@ mas_apps:
   - { name: EzyCal, id: 1190243926 }
   - { name: Boop, id: 1518425043 }
   - { name: Commander One - file manager, id: 1035236694 }
+
+node_version: 14

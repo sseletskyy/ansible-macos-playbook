@@ -1,0 +1,7 @@
+---
+
+- name: Install node version
+  shell: "n {{ node_version }}"
+  tags:
+    - custombrew
+    - node
