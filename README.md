@@ -30,7 +30,8 @@ xcode-select --install
 ```shell
 cd ~
 git clone https://github.com/Homebrew/brew homebrew
-brew update -force --quiet
+export PATH=$HOME/homebrew/bin:$PATH
+brew update --force --quiet
 chmod -R go-w "$(brew --prefix)/share/zsh"
 ```
 
@@ -53,6 +54,7 @@ ansible-playbook main.yml -t ssh --verbose --ask-vault-pass
 ansible-playbook main.yml -t homebrew --verbose
 
 # mas (Macos App Store)
+# make sure you have signed in into icloud
 ansible-playbook main.yml -t mas --verbose
 
 # settings

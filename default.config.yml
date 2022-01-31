@@ -34,19 +34,27 @@ homebrew_taps:
   - homebrew/cask-fonts
 
 homebrew_apps:
+  - bitwarden
   - brave-browser
   - cheatsheet
+  - chromium
   - clipy
   - discord
   - docker
   - firefox
+  - free-ruler
+  - google-chrome
   - iterm2
   - jetbrains-toolbox
+  - keka
+  - notion
+  - rectangle # successor of spectacle
   - skype
   - slack
-  - spectacle
   - telegram
+  - tor-browser
   - vlc
+  - vscodium
 
 homebrew_packages:
   - curl
