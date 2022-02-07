@@ -63,3 +63,16 @@ ansible-playbook main.yml -t settings --verbose
 # custom homebrew
 ansible-playbook main.yml -t custombrew --verbose
 ```
+# Troubleshooting
+
+## Mac drains battery in a sleep mode
+
+Here's the solution (need to update to macOS 11.2 RC):
+
+1. Run command in terminal: `sudo pmset -a tcpkeepalive 0`
+
+2. Run command in terminal: `sudo pmset -a powernap 0`
+
+3. Make sure these options is not checked: "System Preferences->Battery->Optimized battery charging" and "System Preferences->Battery->Power Adapter->Wake for network access"
+
+4. Reboot your macbook
