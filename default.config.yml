@@ -69,7 +69,9 @@ homebrew_packages:
   - openssh
   - python
   - reattach-to-user-namespace
+  - ripgrep # https://sys-adm.in/systadm/905-ripgrep-bystryj-umnyj-poisk-soderzhimogo-v-fajlakh-ustanovka-v-linux-macos.html
   - stow
+  - tig # https://jonas.github.io/tig/doc/manual.html
   - tldr
   - tmux
   - tree
